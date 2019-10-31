@@ -1,1 +1,10 @@
 #Commented Line
+#Pull Data for GOOGL which is a stock market notation for NASDAQ Google
+
+import pandas as pd
+import quandl
+
+df = quandl.get('WIKI/GOOGL')
+
+print(df.head())
+
